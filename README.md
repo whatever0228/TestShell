@@ -16,10 +16,10 @@ The program can only run at the following two modes:
   * ### quit
     This comand **MUST** be invoked **ONLY** at the end of the program when it's at **Task Mode**, if not, well, Exception may arise.
   * ### cr `processName` `priority`
-    Create a new process with a given name `processName` and a given priority `priority`, and insert it into the `ReadyList` and execute the `scheduler` task.
+    Create a new process with a given name `processName` and a given priority `priority`, then insert it into the `ReadyList` and execute the `scheduler` task.
     if `processName` is already in use, well, I can only say `Observe the code yourself.`
   * ### de `processName`
-    Delete the process named `processName`, release all given resources, trying wake up the blocked processes and execute the `scheduler` task. if not exists, `Observe the code yourself.`
+    Delete the process named `processName`, release all given resources, trying wake up the blocked processes then execute the `scheduler` task. if not exists, `Observe the code yourself.`
   * ### req R`i` `count`
     Request the R`i` resource with a number of `count` for the current running process, if fails, the process will be blocked.
     **Note**: if `count` is larger than the total count, the program will exit with a code `1`.
