@@ -8,7 +8,7 @@ The program can only run at the following two modes:
  - **Standard Mode** which means the input is from **System.in**. When no command argument is specified, this mode is picked.
  - **Task Mode** which means the input is from files. when the command argument is not null, this mode is activated and the first argument is treated as the name of the target script file while others is ignored.  
 ## Debug 
-  * If **Main.inTestMode** is set to true, command arguments will be ignored which means that no script file wiil be accepted and the program always stays at **Standard Mode**.
+  * If **Main.inTestMode** is set to true, command arguments will be ignored which means that no script file will be accepted and the program always stays at **Standard Mode**.
 ## Supported commands
   * ### init 
     This command **MUST** be invoked at the very beginning, if not, Who cares? I don't want to handle the shit situation.
